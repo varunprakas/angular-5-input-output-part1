@@ -1,0 +1,6 @@
+<h4>Parent component</h4>
+{{count}}
+{{name}}
+<app-child [parentCount]="count" [parentName]="name" (change)="updateFromChild($event)"></app-child>
+<button (click)="countReset()">Reset</button>
+<!-- <button (click)="updateFromParent($event)">Update from Parent</button> -->
